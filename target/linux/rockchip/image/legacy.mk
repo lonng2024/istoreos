@@ -60,14 +60,16 @@ $(call Device/Legacy/rk3528,$(1))
 endef
 TARGET_DEVICES += radxa_e24c
 
-define Device/shuying_sy910
+define Device/xuanying_sy910
 $(call Device/Legacy/rk3528,$(1))
-  DEVICE_VENDOR := Shuying
+  DEVICE_VENDOR := Xuanying
   DEVICE_MODEL := SY910
   DEVICE_DTS := rk3528/rk3528-sy910
-  DEVICE_PACKAGES += kmod-usb-net kmod-usb-net-rtl8152 kmod-usb-net-asix kmod-usb-net-asix-ax88179 kmod-usb-net-smsc95xx
+  UBOOT_DEVICE_NAME :=   
+  DEVICE_PACKAGES += kmod-usb-net kmod-usb-net-rtl8152 kmod-usb-net-asix \
+	kmod-usb-net-asix-ax88179 kmod-usb-net-smsc95xx
 endef
-TARGET_DEVICES += shuying_sy910
+TARGET_DEVICES += xuanying_sy910
 
 
 # RK3568
