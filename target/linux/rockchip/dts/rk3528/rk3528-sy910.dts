@@ -2332,6 +2332,16 @@
 		keep-power-on;
 		status = "okay";
 	};
+	sprd-wlan {
+		compatible = "sprd,uwe5621-wifi";
+		status = "okay";
+	};
+
+	sprd-mtty {
+		compatible = "sprd,mtty";
+		sprd,name = "ttyBT";
+		status = "okay";
+	};
 
 	leds {
 		compatible = "gpio-leds";
