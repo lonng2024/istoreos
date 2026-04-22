@@ -1,7 +1,7 @@
 /dts-v1/;
 
 / {
-	compatible = "shuying,sy910\0rockchip,rk3528";
+	compatible = "xuanying,sy910\0rockchip,rk3528";
 	interrupt-parent = <0x01>;
 	#address-cells = <0x02>;
 	#size-cells = <0x02>;
